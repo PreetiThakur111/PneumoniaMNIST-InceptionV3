@@ -4,7 +4,7 @@ This project fine-tunes a pre-trained **Inception-V3** model on the **PneumoniaM
 
 ---
 
-## 📁 Dataset
+## Dataset
 
 - **Name**: PneumoniaMNIST  
 - **Source**: [Kaggle - PneumoniaMNIST](https://www.kaggle.com/datasets/rijulshr/pneumoniamnist/data)  
@@ -15,7 +15,7 @@ This project fine-tunes a pre-trained **Inception-V3** model on the **PneumoniaM
 
 ---
 
-## ⚙️ Setup Instructions
+##  Setup Instructions
 
 Install the required libraries using:
 
