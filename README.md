@@ -1,4 +1,4 @@
-#**Pneumonia Detection using Inception-V3**
+##**Pneumonia Detection using Inception-V3**
 
 This project fine-tunes a pre-trained **Inception-V3** model on the **PneumoniaMNIST** dataset to classify chest X-ray images as either **Normal** or **Pneumonia**.
 
@@ -17,12 +17,12 @@ This project fine-tunes a pre-trained **Inception-V3** model on the **PneumoniaM
 Install the required libraries using:
 pip install -r requirements.txt
 
-**How to Run the Project**
+##**How to Run the Project**
 Download the PneumoniaMNIST dataset as .npy files
 Place all .npy files in your project directory
 Open and run Pneumonia_Inception_V3.ipynb notebook ( Colab)
 Training will run for 5 epochs and print evaluation results
- **Evaluation Metrics (on Test Set)**
+## **Evaluation Metrics (on Test Set)**
 
               precision    recall  f1-score   support
 
@@ -32,19 +32,19 @@ Training will run for 5 epochs and print evaluation results
     accuracy                           0.87       624
    macro avg       0.88      0.84      0.85       624
 weighted avg       0.87      0.87      0.86       624
-**Insights:**
+##**Insights:**
 Model achieved high recall (96%) for Pneumonia, making it suitable for early diagnosis
 Performance for Normal cases improved significantly after handling class imbalance
 Balanced F1-scores across both classes
 
-**Model Details**
+##**Model Details**
 Architecture: Inception-V3 from torchvision.models
 Modifications: Final FC layer changed to output 2 classes
 Input Size: 299x299 images (grayscale → RGB)
 Augmentation:RandomHorizontalFlip, RandomRotation, ColorJitter
 Loss Function: CrossEntropyLoss with class weights to handle imbalance
 
-**Hyperparameter Choices**
+##**Hyperparameter Choices**
  Parameter	     - Value	        - Reason
 1.Learning Rate	- 0.001	          - Standard rate for Adam optimizer
 2.Batch Size	  - 32	            - Balanced memory usage and training speed
@@ -52,9 +52,9 @@ Loss Function: CrossEntropyLoss with class weights to handle imbalance
 4.Optimizer     -	Adam            - Efficient for deep learning and adaptive learning rates
 5.Loss Function -	CrossEntropyLoss-  with weights	To penalize under-represented class
 
-**Files in This Project**
+##**Files in This Project**
 Pneumonia_Inception_V3.ipynb     # Complete notebook with code and results
 requirements.txt                 # Required packages for environment setup
 README.md                        # Instructions, results, and insights (this file)
-** Summary**
+##**Summary**
 This project demonstrates how to fine-tune a pre-trained CNN (Inception-V3) for medical image classification. It also explores the impact of class imbalance and how to address it using data augmentation and weighted loss functions.
